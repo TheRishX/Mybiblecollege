@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover" />
+    <title>Spirit and Truth College</title>
+    <meta name="description" content="Your two-year self-study Bible college: daily tasks, notes and progress." />
+    <meta name="theme-color" content="#3366F0" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <style id="expo-reset">
+      html, body { height: 100%; }
+      body { overflow: hidden; margin: 0; background: #F4F7FF; }
+      @media (prefers-color-scheme: dark) { body { background: #F4F7FF; } }
+      #root { display: flex; height: 100%; flex: 1; }
+    </style>
+  </head>
+  <body>
+    <noscript>Please turn on JavaScript to use Spirit and Truth College.</noscript>
+    <div id="root"></div>
+    <script>
+      if ("serviceWorker" in navigator && location.protocol === "https:") {
+        window.addEventListener("load", function () { navigator.serviceWorker.register("/sw.js").catch(function () {}); });
+      }
+    </script>
+  </body>
+</html>

@@ -1,28 +1,39 @@
 {
   "expo": {
-    "name": "spirit-truth-college",
+    "name": "Spirit and Truth College",
     "slug": "spirit-truth-college",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#3366F0"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.spirittruth.college"
     },
     "android": {
+      "package": "com.spirittruth.college",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#3366F0"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "output": "single",
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png",
+      "name": "Spirit and Truth College",
+      "shortName": "Bible College",
+      "themeColor": "#3366F0",
+      "backgroundColor": "#F4F7FF",
+      "description": "Your two-year self-study Bible college: daily tasks, notes and progress."
+    },
+    "plugins": [
+      "expo-asset"
+    ]
   }
 }
