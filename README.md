@@ -25,3 +25,12 @@ A two-year self-study Bible college app. One codebase runs as:
 2. `npm install -g eas-cli` then `eas login`
 3. `eas build -p android --profile preview` gives you an `.apk` download link you can install on any Android phone.
 4. For the Google Play Store use `eas build -p android --profile production` (an `.aab` file) and upload it in the Play Console (one-time $25 developer fee).
+
+## Android APK (automatic)
+
+Every push to `main` runs `.github/workflows/android-apk.yml` on GitHub Actions. It generates the native
+Android project with `expo prebuild`, builds a release APK with Gradle, and publishes it on the repository's
+**Releases** page (also kept as a workflow artifact). Download the `.apk` on your phone and install it.
+
+The APK is signed with the default debug key, which is fine for installing on your own devices. For the
+Play Store, build an app bundle with EAS (`eas build -p android --profile production`) instead.
